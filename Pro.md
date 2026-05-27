@@ -56,8 +56,9 @@ LEVEL 00-B. 캔버스 프레임 레이아웃 (Composition Canvas)
 
 #1부: 인물 세포 정보 (Anatomy Matrix)
 　
-　
-　
+
+　　
+
 LEVEL 01. 마스터 기본 정의 (Primary Identity)
 
 (1) 성별: [ 선택지: 여성(Female) / 남성(Male) / 기타 ]
