@@ -1,11 +1,11 @@
-#[SA-IR flash v2.0] 누구나 쓰는 AI 이미지 조립 명세서
+# [SA-IR flash v2.0] 누구나 쓰는 AI 이미지 조립 명세서
 
 [사용자 안내서]
 
 아래의 LEVEL 00부터 LEVEL 10까지의 블록에서 마음에 드는 선택지를 고르거나, 선택지 대신 [  ] 빈칸에 원하는 vibe를 적어 넣으세요. 다 채운 뒤 전체를 복사해서 AI에게 던지면, 내부 컴파일러가 vibe에 맞는 이미지를 생성합니다. [필요 없는 부분은 지우고 복사하면 됩니다. ★ 는 중요도.]
 
 
-#[이 아래부터 복사해서 ai에게 던지면 됩니다.]
+# [이 아래부터 복사해서 ai에게 던지면 됩니다.]
 
 [⚠️ SYSTEM COMPILER SWITCH: FORCE VISUAL EMISSION]
 - 본 문서는 텍스트 추론용 지시서가 아닌, 이미지 생성 커널 직결용 [SA-IR v2.0] 바이너리 스펙 시트입니다.
@@ -21,7 +21,7 @@ LEVEL 00. 마스터 목적 (Target Vibe) [Flash 버전]
 
 
 
-#1부: 인물 정보 (Anatomy Matrix)★ ★ ★ 
+# 1부: 인물 정보 (Anatomy Matrix)★ ★ ★ 
 
 LEVEL 01. 인적 사항 및 국적 (Primary Identity)
 
@@ -94,7 +94,7 @@ LEVEL 04. 피부 질감 디테일 (Skin Imperfections) ★ ★
 
 ※ 백엔드 맵핑: 기성 모델의 도자기 피부 필터를 찢어버리고 고주파 레이턴트 노이즈를 강제 고착시키는 기폭제
 
-#2부: 스타일링 및 의상 (Style & Outfit)
+# 2부: 스타일링 및 의상 (Style & Outfit)
 
 LEVEL 05. 헤어스타일 및 머릿결
 
@@ -130,7 +130,7 @@ LEVEL 07. 옷 핏 및 카메라 구도
 
 
 
-#3부: 시공간 및 광학 물리 레이어 (Environment VFX)
+# 3부: 시공간 및 광학 물리 레이어 (Environment VFX)
 
 LEVEL 08. 주변 배경 및 시간대 ★ 
 
@@ -147,7 +147,7 @@ LEVEL 09. 조명 분위기 (색온도) ★
 
 
 
-#4부: 출력 스타일 선택 (Render Output)
+# 4부: 출력 스타일 선택 (Render Output)
 
 LEVEL 10. 최종 그림/사진 스타일 선택 ★
 
@@ -182,7 +182,7 @@ LEVEL 11. 가비지 노이즈 필터 (Negative Prompt Matrix) ★★
 
 
 
-#4부: 디지털 후보정 및 컬러 매트릭스 (Post-Processing & Grading)
+# 5부: 디지털 후보정 및 컬러 매트릭스 (Post-Processing & Grading)
 LEVEL 12. 디지털 현상 및 필터 앵커 (Post-Render Processing)
 (1) 물리적 입체감 (3D Depth Pop / Chiaroscuro)
 
