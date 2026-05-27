@@ -54,7 +54,7 @@ LEVEL 00-B. 캔버스 프레임 레이아웃 (Composition Canvas)
 
 
 
-1부: 인물 세포 정보 (Anatomy Matrix)
+#1부: 인물 세포 정보 (Anatomy Matrix)
 
 LEVEL 01. 마스터 기본 정의 (Primary Identity)
 
@@ -82,7 +82,7 @@ LEVEL 02. 안면 토폴로지 기하학 (Facial Topology)
 ※ 백엔드 맵핑: 구륜근 주변 미세 음영 조율로 AI 특유의 부자연스러운 가짜 미소 필터 원천 박멸. (5)번 슬롯 입력 시, LEVEL 10에서 선택한 마스터 렌더 스위치와 실시간 동기화되어 하드웨어 락 프로필에 안면 골격 정점(Vertices) 데이터 우선 병합.
 
 
-💬 [PRO 가이드] 안면 구조 미세 제어 가이드라인 (Face Geometry Tuning)
+[PRO 가이드] 안면 구조 미세 제어 가이드라인 (Face Geometry Tuning)
 
 AI 배포 및 작성 시 "이쁘게", "날카롭게", "매력적으로" 같은 감정적 뉘앙스어는 토큰 연산력을 낭비시키고 무작위 노이즈를 유발합니다. 얼굴형을 정밀하게 통제하고 싶다면, LEVEL 10의 마스터 슬롯에 맞춰 아래의 물리적 형태학 토큰을 (5)번 슬롯에 복사하여 주입하세요.
 
@@ -99,7 +99,7 @@ AI 배포 및 작성 시 "이쁘게", "날카롭게", "매력적으로" 같은 �
 효과: 스튜디오 인물 촬영에 가장 최적화된 뼈대 노드 고정 및 불필요한 광학 왜곡 방지.
 
 
-🎨 3형·4형 [서브컬처 계열] 전용 앵커
+3형·4형 [서브컬처 계열] 전용 앵커
 
 슬림 V라인 2D 윤곽: Smooth and slim chin line (매끄럽고 슬림한 턱선)
 
@@ -157,7 +157,7 @@ LEVEL 04. (Skin Imperfections) ★
 ※ 백엔드 맵핑: 기성 모델의 도자기 피부 필터를 찢어버리고 고주파 레이턴트 노이즈를 강제 고착시키는 기폭제
 
 
-🧥 2부: 외형 및 스타일 레이어 (Style Frame)
+#2부: 외형 및 스타일 레이어 (Style Frame)
 
 LEVEL 05. 헤어 구조 및 바인딩 (Hair Architecture)
 
@@ -196,7 +196,7 @@ LEVEL 07. 의상 핏 및 구도 앵커 (Fit & Frame Anchor)
 
 
 
-🎨 3부: 시공간 및 광학 물리 레이어 (Environment VFX)
+#3부: 시공간 및 광학 물리 레이어 (Environment VFX)
 
 LEVEL 08. 글로벌 시공간 6분할 벡터 (Spatiotemporal Node)
 
@@ -211,7 +211,7 @@ LEVEL 09. VFX 라이팅 및 색온도 (VFX Optical Value)
 ※ 백엔드 맵핑: 뉘앙스어 전량 소거, 실제 영화용 렘브란트 라이팅 가중치와 볼류메트릭 안개 밀도 수치 직접 주입
 
 
-[전문가/ 비디오 특화 목적 VFX 레이어]
+#[전문가/ 비디오 특화 목적 VFX 레이어]
 
 LEVEL 09-B. 멀티-라이팅 및 음영 다이내믹스 (Dynamic Lighting & Shadows)
 ※ 백엔드 맵핑: 다중 광원의 위치 에너지를 고정하여, 비디오 생성 시 프레임 간 광자(Photon) 밀도 누수로 인한 플리커(Flicker) 현상 및 불규칙한 그림자 왜곡을 원천 제어.
@@ -259,7 +259,8 @@ LEVEL 10. 마스터 렌더링 모드 및 장비 프로필 스위치 (Dynamic Pro
 
 ※ 백엔드 가변 컴파일러 작동 제어 상수 가중치 (Hard-Lock Profile)
 
-📸 [1형 [실사 하이엔드 사진] 선택 시 강제 고정 프로필
+
+[1형 [실사 하이엔드 사진] 선택 시 강제 고정 프로필
 
 렌더 락 (Render Lock): 인위적인 도자기 필터를 차단하는 모공 질감 및 미세 요철 밀도 $0.85$ 하드 락, 35mm 필름 그레인(Film Grain) 노이즈 가중치 $0.05$ 오버레이, 3D CGI 가상 텍스처 가중치 완전 음수($-1.0$) 처리로 '인공 불쾌한 골짜기' 원천 박멸.
 
@@ -267,7 +268,8 @@ LEVEL 10. 마스터 렌더링 모드 및 장비 프로필 스위치 (Dynamic Pro
 
 광학 노이즈 락 (Optical Lock): 이미지 훼손을 방지하는 베이스 네이티브 ISO 100 감도 고정, 회전 왜곡이 없는 리니어(Linear) 구도 보정, 주사율 플리커 프리, 1/250s 셔터 스피드로 모션 블러 완전 제로화.
 
-🎬 [2형 [시네마틱 영상/VFX] 선택 시 강제 고정 프로필 (★ 영상 특화 신설)
+
+[2형 [시네마틱 영상/VFX] 선택 시 강제 고정 프로필 (★ 영상 특화 신설)
 
 렌더 락 (Render Lock): 디지털 텍스처를 찢어버리는 영화용 ARRIRAW 색역 데이터셋 강제 강하, 인간의 망막과 가장 유사한 14+ 가상 스톱(Stops)의 초고다이내믹 레인지(HDR) 커브 매핑. 피부 톤의 부드러운 하이라이트 롤오프(Roll-off) 연산 활성화.
 
@@ -275,7 +277,8 @@ LEVEL 10. 마스터 렌더링 모드 및 장비 프로필 스위치 (Dynamic Pro
 
 시네 모션 락 (Motion Lock): 영화적 시간의 영속성을 위한 24fps 프레임 고정, 시네마 표준 180° 셔터 각도(Shutter Angle) 자동 연산 (실제 노출 시간 1/48s에 수렴하는 자연스러운 모션 블러 가중치 락), 센서 베이스 노이즈가 가장 정제되는 제1 네이티브 EI(ISO) 800 고정.
 
-🎨 [3형 [2D 애니메이션 셀 셰이더] 선택 시 강제 고정 프로필
+
+[3형 [2D 애니메이션 셀 셰이더] 선택 시 강제 고정 프로필
 
 렌더 락 (Render Lock): 3D 공간 벡터의 렌더 피쳐를 강제 왜곡. 모공 질감, 가죽 디테일, 필름 그레인 상수를 전량($0.0$) 소거. 서브컬처 애니메이션 전용 플랫 셀 셰이더(Flat Cell Shader) 커포넌트 강제 로드.
 
@@ -283,7 +286,8 @@ LEVEL 10. 마스터 렌더링 모드 및 장비 프로필 스위치 (Dynamic Pro
 
 광학 무력화 (Optical Bypass): 카메라 렌즈의 광학적 압축 및 수차 현상을 우회(Bypass)하여 90년대 셀 애니메이션 특유의 평면적 투시도법(2D Perspective)으로 레이아웃 강제 수렴.
 
-💎 [4형 [2.5D 일러스트 반실사] 선택 시 강제 고정 프로필
+
+[4형 [2.5D 일러스트 반실사] 선택 시 강제 고정 프로필
 
 렌더 락 (Render Lock): 2D 일러스트의 회화적 화풍과 3D 공간 음영의 하이브리드 보간. 모공은 지우되 안면의 입체적 곡면 볼륨감(Soft Shading)은 유지하는 고해상도 2D 일러스트 텍스처 수렴 프로필 스위칭.
 
@@ -299,17 +303,19 @@ LEVEL 11. 가비지 노이즈 필터 (Negative Prompt Matrix) ★ [신설 및 �
 [ 하드웨어 공통 음수 가중치 매핑: bad anatomy, deformed fingers, extra limbs, mutated hands, blurry, low quality text, asymmetric eyes, cross-eyed, duplicate artifacts, digital oversaturation, airbrushed plastic skin ]
 ※ 백엔드 맵핑: 디퓨전 노이즈 스페이스에서 인체 붕괴 및 디지털 필터 과부하를 일으키는 불량 가중치 벡터를 강제 무력화(Negative Force Capping)하는 최종 가비지 컬렉터.
 
-🔒 4부: 최종 출력 스타일 및 후가공 (Render & Post-Production)
+
+#4부: 최종 출력 스타일 및 후가공 (Render & Post-Production)
 
 (LEVEL 10~11 하단 배인딩 규격)
 
-🎬 LEVEL 12. 시네마틱 포스트-프로덕션 & VFX 컴포지팅 매트릭스 (PRO Spec)
+LEVEL 12. 시네마틱 포스트-프로덕션 & VFX 컴포지팅 매트릭스 (PRO Spec)
 
 (1) 색 영역 파이프라인 및 감마 로크 (Color Space & Gamma Curve)
 
 [ 선택지: ACEScg (VFX 표준) / 14스톱 Log-C4 (ARRI 표준) / DaVinci Wide Gamut / Rec.2020 ]
 
 ※ 백엔드 맵핑: 디퓨전 엔진이 데이터를 뱉을 때 픽셀을 화이트로 날려버리는 악성 클리핑을 차단하고, 암부와 하이라이트의 보드라운 롤오프(Roll-off) 곡선을 강제 홀딩하는 마스터 컬러 스페이스 레이어.
+
 
 (2) ASC CDL 및 톤 매핑 미세 조정 (Color Decision List)
 
@@ -321,6 +327,7 @@ Power (Gamma/중간 톤 섀도우): [ 선택지: 중간 톤 대비 극대화 / �
 
 Contrast / Saturation: [ 선택지: 내추럴 스튜디오 채도 / 비비드 오버드라이브 / 크로마 제로(Monochrome) ]
 
+
 (3) 광학 볼륨 및 깊이 입체감 (Z-Depth Pass & Volumetric Spatial)
 
 Z-Depth 입체감 앵커: [ 선택지: 0.0(Bypass) ~ 1.0(Maximum) ] ──► 인물과 배경의 거리 데이터를 강제 연산하여 피사계 심도(Bokeh Out) 및 전경/배경 공간 레이어 분리 강도 제어.
@@ -328,6 +335,7 @@ Z-Depth 입체감 앵커: [ 선택지: 0.0(Bypass) ~ 1.0(Maximum) ] ──► �
 볼류메트릭 스캐터링 (Volumetric Smoke/Mist 밀도): [ 예시: 0.15 (창가 사광을 타고 흐르는 미세한 먼지 틴트) / None ]
 
 아나모픽 플레어 (Anamorphic Streak): [ 선택지: 수평 블루 스트레이크 플레어 (Sci-Fi 필터) / 내추럴 헤이즈 플레어 / None ]
+
 
 (4) 시네마틱 아티팩트 및 그레인 아키텍처 (Emulsion & Halation)
 
@@ -340,6 +348,7 @@ Z-Depth 입체감 앵커: [ 선택지: 0.0(Bypass) ~ 1.0(Maximum) ] ──► �
 크기 및 강도: [ 크기: 35mm Fine / 강도: 0.05 스튜디오 규격 ]
 
 주파수 변조 (Frequency): [ 어두운 영역(Shadow)에만 입자가 뭉치고 밝은 영역은 정갈하게 유지 ]
+
 
 (5) 10대 마스터 시네마틱 LUT 프로필 (Master Look-Up Table)
 
