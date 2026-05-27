@@ -50,6 +50,8 @@ SA-IR_PRO_v2.0.md: ACEScg 색역, ASC CDL 매트릭스, Z-Depth 패스 및 실�
 
 SA-IR_Flash_v2.0.md: 빠른 시각적 가속 및 범용 세션을 위해 규격을 축소한 다이어트 템플릿.
 
+SA-IR_Plus_v2.0.md: Pro와 Flash의 중간
+
 Quick Start: 원터치 인젝션 (One-Touch Injection)
 설정: 본 레포지토리 내부의 환경에 맞게 사양 파일(PRO 또는 Flash)을 선택합니다.
 
