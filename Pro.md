@@ -55,9 +55,9 @@ LEVEL 00-B. 캔버스 프레임 레이아웃 (Composition Canvas)
 
 
 #1부: 인물 세포 정보 (Anatomy Matrix)
-
-
-
+　
+　
+　
 LEVEL 01. 마스터 기본 정의 (Primary Identity)
 
 (1) 성별: [ 선택지: 여성(Female) / 남성(Male) / 기타 ]
@@ -69,6 +69,8 @@ LEVEL 01. 마스터 기본 정의 (Primary Identity)
 ※ 백엔드 맵핑: 안면 골격 비율 및 픽셀 노화도 초기 벡터 잠금
 
 
+
+　
 
 LEVEL 02. 안면 토폴로지 기하학 (Facial Topology)
 
@@ -112,9 +114,9 @@ AI 배포 및 작성 시 "이쁘게", "날카롭게", "매력적으로" 같은 �
 
 효과: 미소녀/미소년 장르 고유의 안면 기하학(눈의 크기 대비 하안부 비율) 레이아웃 강제 수렴.
 
-
-
-
+　
+　
+　
 LEVEL 03. 신체 차원 매트릭스 (Body Geometry)
 
 (1) 키: [ 예시: 165cm ] ──► 화각 대비 전신 비율 가중치 연산
@@ -151,8 +153,10 @@ LEVEL 03. 신체 차원 매트릭스 (Body Geometry)
 
 ※ 백엔드 맵핑 수식: dynamic action keyframe pose tracking, 인체 관절점 앵커 바인딩을 유지한 채 질량 중심점($C.M.$)을 비대칭 이동시켜 뼈대 붕괴율을 0%로 강제 억제.
 
+　
 
-
+　
+　
 LEVEL 04. (Skin Imperfections) ★ 
 
 [ 선택지 1: 눈 밑의 미세한 점과 옅은 주근깨 / 흉터 / 홍조 / 완전 무결 ]
@@ -201,8 +205,12 @@ LEVEL 07. 의상 핏 및 구도 앵커 (Fit & Frame Anchor)
 
 
 
+
 #3부: 시공간 및 광학 물리 레이어 (Environment VFX)
 
+　
+　
+　
 LEVEL 08. 글로벌 시공간 6분할 벡터 (Spatiotemporal Node)
 
 [ (1) 시간: 나른한 오후 2시경 / (2) 공간: 실내 스튜디오 안 / (3) 시기: 현대 / (4) 계절: 늦가을 / (5) 위치: 조용한 골목길이 내다보이는 창가 옆 / (6) 외 요소: 아무런 장식 없는 깔끔한 민무늬 회색 노출 콘크리트 벽면 ]
@@ -248,7 +256,9 @@ LEVEL 09-C. 포스트 컴포지팅 및 렌즈 FX (Post-Compositing & Lens FX) �
 (4) 모션 블러 / 셔터 스피드 가상 락: [ 180도 셔터 각도(Shutter Angle) 기준의 자연스러운 모션 블러 ]
 ──► (비디오 확장용) 카메라나 인물이 움직일 때 프레임이 찢어지는 현상 방지
 
+　
 
+　
 
 LEVEL 10. 마스터 렌더링 모드 및 장비 프로필 스위치 (Dynamic Profile Switch) ★ [Hyper-PRO 스펙]
 
