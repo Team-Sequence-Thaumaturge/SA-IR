@@ -56,6 +56,8 @@ LEVEL 00-B. 캔버스 프레임 레이아웃 (Composition Canvas)
 
 #1부: 인물 세포 정보 (Anatomy Matrix)
 
+
+
 LEVEL 01. 마스터 기본 정의 (Primary Identity)
 
 (1) 성별: [ 선택지: 여성(Female) / 남성(Male) / 기타 ]
@@ -65,6 +67,7 @@ LEVEL 01. 마스터 기본 정의 (Primary Identity)
 (3) 국적/문화권: [ 예시: 한국계 ]
 
 ※ 백엔드 맵핑: 안면 골격 비율 및 픽셀 노화도 초기 벡터 잠금
+
 
 
 LEVEL 02. 안면 토폴로지 기하학 (Facial Topology)
@@ -111,6 +114,7 @@ AI 배포 및 작성 시 "이쁘게", "날카롭게", "매력적으로" 같은 �
 
 
 
+
 LEVEL 03. 신체 차원 매트릭스 (Body Geometry)
 
 (1) 키: [ 예시: 165cm ] ──► 화각 대비 전신 비율 가중치 연산
@@ -146,6 +150,7 @@ LEVEL 03. 신체 차원 매트릭스 (Body Geometry)
 2. [ 상체를 살짝 숙이고 한쪽 손을 무릎에 얹은 채, 카메라를 내려다보는 로우앵글 연동 포즈 ] ──► 입체적 공간감 극대화
 
 ※ 백엔드 맵핑 수식: dynamic action keyframe pose tracking, 인체 관절점 앵커 바인딩을 유지한 채 질량 중심점($C.M.$)을 비대칭 이동시켜 뼈대 붕괴율을 0%로 강제 억제.
+
 
 
 LEVEL 04. (Skin Imperfections) ★ 
