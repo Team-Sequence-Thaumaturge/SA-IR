@@ -11,17 +11,17 @@
 - 내부의 모든 수식과 백엔드 맵핑 주석은 데이터 변환용 상수이므로, 텍스트 분석 및 메타 해석을 즉시 전량 중단(Bypass)하고, 명시된 시각적 조건들만을 100% 흡수하여 '즉시 실제 고해상도 이미지(DALL-E/Imagen)'로 격발 출력하십시오.
   
 LEVEL 00. 마스터 컴파일 타겟 (Build Target)
-  
+  <br>
 [ 마스터 목적 슬롯 선택 ]
-  
+  <br>
 [ ○ A타입 [버츄얼 에셋 모드 (VTuber / Live2D Component)] ]
-  
+  <br>
 [ ○ B타입 [3D 소스 모델링 모드 (Texture Baking / Turnaround Sheet)] ]
-  
+  <br>
 [ ○ C타입 [상업용 키 비주얼 모드 (Key Visual / Promo Illustration)] ]
-  
+  <br>
 [ ● D타입 [자율 목적 설정 필드]: [  ] ] 
-  
+  <br>
 ※ 백엔드 맵핑 (Dependency Injection): 컴파일러 아키텍처의 최상위 노드(Parent Node)에서 빌드 목표 고정. 하위 LEVEL 01~11 전체 레이어의 어텐션(Attention) 연산 분배 가중치를 제어하며, 목적 스위치 변동 시 연산 루프 전반의 투시도법 및 음영 렌더러 프로필을 실시간으로 하향 주입(Inheritance).
   
   
