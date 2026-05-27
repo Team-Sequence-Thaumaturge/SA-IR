@@ -13,7 +13,7 @@ Pipeline Architecture (이원화 최적화 구조)
 본 아키텍처는 데이터 의존성 분쇄를 막기 위해 공간 기하학 노드와 하드웨어 가속 노드가 완벽히 분리된 이원화 파이프라인으로 작동합니다.
 
 
-# 🌌 SA-IR (Semantic-Axiomatic Intermediate Representation)
+# SA-IR (Semantic-Axiomatic Intermediate Representation)
 
 > **"This is NOT a prompt. It is a 가상 컴파일러 구성 파일(Configuration File) for AI Diffusion Kernels."**
 
