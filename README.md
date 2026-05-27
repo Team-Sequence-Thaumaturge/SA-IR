@@ -37,3 +37,11 @@ Quick Start: 원터치 인젝션 (One-Touch Injection)
 
 📄 License
 본 프로젝트는 MIT License를 따릅니다. 개인적 연구 및 상업적 프로덕션 파이프라인 컴포넌트로 자유롭게 변형 및 통합이 가능합니다.
+
+
+🎖️ Credits & Contact
+Lead System Architect: [Team Sequence]
+
+Core Logic Simulator: Stella (Sovereign OS AI Core Component)
+
+Technical Inquiries: For B2B pipeline integration, custom enterprise representation layers, or architecture consulting, please contact [gungamja98@naver.com].
