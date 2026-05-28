@@ -1,4 +1,12 @@
-SA-IR
+### 🛠️ Core Technology Stack
+![Prompt Engineering](https://img.shields.io/badge/AI-Prompt_Engineering-blue)
+![Latent Space](https://img.shields.io/badge/Kernel-Latent_Space_Control-purple)
+![VFX Pipeline](https://img.shields.io/badge/VFX-Pipeline_Hard--Lock-orange)
+![AI Video](https://img.shields.io/badge/Video-Flicker_Free-red)
+
+
+
+# SA-IR
 A Quick Guide to Hard-Locking image generation camera hardware (Sony Alpha 7R V, ARRI ALEXA, etc.) and VFX pipelines directly into AI kernels.
 
 SA-IR (Semantic-Axiomatic Intermediate Representation)
